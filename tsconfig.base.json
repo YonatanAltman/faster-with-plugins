@@ -17,6 +17,9 @@
     "paths": {
       "@faster-with-plugins/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
+      ],
+      "@faster-with-plugins/api-city": [
+        "libs/api-city/src/index.ts"
       ]
     }
   },
