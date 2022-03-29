@@ -4,6 +4,32 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "cisco-meetup": "apps/cisco-meetup",
-    "cisco-meetup-e2e": "apps/cisco-meetup-e2e"
+    "cisco-meetup-e2e": "apps/cisco-meetup-e2e",
+    "city-feature-city": {
+      "projectType": "library",
+      "root": "libs/city/feature-city",
+      "sourceRoot": "libs/city/feature-city/src",
+      "prefix": "city",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/city/feature-city"],
+          "options": {
+            "jestConfig": "libs/city/feature-city/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/city/feature-city/src/**/*.ts",
+              "libs/city/feature-city/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["scope:city", "type:feature"]
+    }
   }
 }

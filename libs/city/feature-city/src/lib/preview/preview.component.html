@@ -1,0 +1,26 @@
+<div class="wrapper" *ngIf="city">
+<div class="back">
+  <a routerLink="/city">back</a>
+</div>
+  <h1>{{city.name}}</h1>
+
+  <div class="projects">
+    <div class="tile">
+      <div class="label">Houses</div>
+      <div class="circle">45</div>
+    </div>
+    <div class="tile b2">
+      <div class="label">For Sale</div>
+      <div class="circle b2">25</div>
+    </div>
+
+    <div class="tile">
+      <div class="label">Participant</div>
+      <div class="circle b3">1,025</div>
+    </div>
+    <div class="tile">
+      <div class="label">Changes</div>
+      <div class="circle b4">0.34%</div>
+    </div>
+  </div>
+</div>

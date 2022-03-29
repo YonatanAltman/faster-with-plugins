@@ -1,0 +1,82 @@
+$blue: #2980b9;
+$blue2: #046896;
+$blue3: #293cb9;
+$blue4: #8b9396;
+$gray: #f6f6f6;
+.wrapper {
+
+  background: $gray;
+  height: calc(100vh - 100px);
+  padding: 50px;
+
+  .projects {
+    display: flex;
+    column-gap: 10px;
+    margin: 50px 20px;
+
+    .label {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .circle {
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+      color: $gray;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      font-size: 30px;
+      transition: all ease-in-out .3s;
+      background: $blue;
+
+      &.b2 {
+
+        background: $blue2;
+      }
+
+      &.b3 {
+
+        background: $blue3;
+
+        font-size: 15px;
+
+        &:hover {
+          font-size: 20px;
+        }
+      }
+
+      &.b4 {
+
+        background: $blue4;
+
+        font-size: 15px;
+
+        &:hover {
+          font-size: 20px;
+        }
+      }
+
+      &:hover {
+        font-size: 50px;
+      }
+
+      animation-duration: .3s;
+      animation-name: circle;
+    }
+  }
+}
+
+@keyframes circle {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+
+  to {
+    height: 100px;
+    width: 100px;
+  }
+}

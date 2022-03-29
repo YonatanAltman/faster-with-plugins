@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <div class="title">
+   <h2> {{title}}</h2>
+  </div>
+  <div class="list" *ngIf="cities$|async as cities">
+
+
+    <div class="table">
+
+      <div class="row header blue">
+        <div class="cell">
+          {{table.cid}}
+        </div>
+        <div class="cell">
+          {{table.name}}
+        </div>
+        <div class="cell">
+          {{table.projects}}
+        </div>
+        <div class="cell">
+          Active
+        </div>
+      </div>
+
+      <div class="row" *ngFor="let city of cities" (dblclick)="navigate(city)">
+        <div class="cell" data-title="Username">
+          {{city.cid}}
+        </div>
+        <div class="cell" data-title="Email">
+          {{city.name}}
+        </div>
+        <div class="cell" data-title="Password">
+          {{city.projectsIds?.length}}
+        </div>
+        <div class="cell" data-title="Active">
+          Yes
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
