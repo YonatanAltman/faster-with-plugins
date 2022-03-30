@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@faster-with-plugins/api-interfaces';
+import {Employee, Message} from '@faster-with-plugins/api-interfaces';
 
 @Component({
   selector: 'faster-with-plugins-root',
@@ -8,6 +8,7 @@ import { Message } from '@faster-with-plugins/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+
   hello$ = this.http.get<Message>('/api/hello');
   constructor(private http: HttpClient) {}
 }

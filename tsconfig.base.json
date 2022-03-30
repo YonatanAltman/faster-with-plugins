@@ -21,7 +21,8 @@
       ],
       "@faster-with-plugins/city/feature-city": [
         "libs/city/feature-city/src/index.ts"
-      ]
+      ],
+      "@global/interfaces": ["libs/api-interfaces/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

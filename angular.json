@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "api-city": "libs/api-city",
     "api-interfaces": "libs/api-interfaces",
     "cisco-meetup": "apps/cisco-meetup",
     "cisco-meetup-e2e": "apps/cisco-meetup-e2e",

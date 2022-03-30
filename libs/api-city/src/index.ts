@@ -1,2 +1,2 @@
-export * from './api-city.module';
-export * from './api-city.service';
+export * from './lib/api-city.module';
+export * from './lib/api-city.service';
