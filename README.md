@@ -48,3 +48,14 @@ isDto?: boolean;
 ```
 ### Run
 `nx workspace-generator $generatorName $parameterName`
+
+
+### THE MAGIC
+
+```typescript
+ generateFiles(tree,
+    srcFolder,
+    target,
+    substitutions
+  );
+```
