@@ -11,7 +11,8 @@ import {CityService} from "../city.service";
 })
 export class PreviewComponent implements OnInit {
   city: any;
-
+  address?: string;
+  count = 0;
   constructor(private activatedRoute: ActivatedRoute,
               private cityService: CityService,
               private changeDetectorRef: ChangeDetectorRef) {
@@ -28,5 +29,19 @@ export class PreviewComponent implements OnInit {
         this.changeDetectorRef.markForCheck();
       });
   }
+  // 🧗️need test
+  public getCityAddress(): void {
+    ++this.count;
+    this.address = `Rothschild boulevard ${this.count}`;
+  }
 
+  // 🧗️need test
+  public constructorHome(text: string): string {
+    return text
+  }
+
+  // ⛔️ private doesn't need test
+  private generateData() {
+    this.count = 0;
+  }
 }

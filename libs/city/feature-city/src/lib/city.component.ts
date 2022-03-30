@@ -29,13 +29,13 @@ export class CityComponent implements OnInit {
 
   }
 
-  getAll() {
+  public getAll() {
     this.cityService.get().subscribe(cities => {
       this.cities$.next(cities);
     });
   }
 
-  navigate(city: any) {
+  public navigate(city: any) {
     return this.router.navigate(['./city/' + city.cid]);
   }
 }
