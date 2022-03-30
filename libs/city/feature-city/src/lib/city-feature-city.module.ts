@@ -10,6 +10,7 @@ import {PreviewComponent} from './preview/preview.component';
     CommonModule,
     HttpClientModule,
     RouterModule.forRoot([
+      {path: '', pathMatch: 'full', redirectTo: 'city'},
       {path: 'city', component: CityComponent},
       {path: 'city/:cid', component: PreviewComponent}
     ]),
