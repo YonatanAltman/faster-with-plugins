@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {HomeService} from "./home.service";
 
 @Component({
-  selector: 'startach-for-ever-home',
+  selector: 'city-for-ever-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

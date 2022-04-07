@@ -10,5 +10,7 @@ import { Message} from '@faster-with-plugins/api-interfaces';
 export class AppComponent {
 
   hello$ = this.http.get<Message>('/api/hello');
+  name: string = 'yonatan';
+
   constructor(private http: HttpClient) {}
 }
